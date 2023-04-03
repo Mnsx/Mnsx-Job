@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2576071e-429d-4685-8ef5-b08e3676181d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="MapperXML" />
+        <option value="Yaml" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Application\Maven\apache-maven-3.8.6-bin\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Application/Maven/apache-maven-3.8.6-bin/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="D:\Application\Maven\apache-maven-3.8.6-bin\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Nd50h5onIwvTxFuS6AwOYz44Tw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mnsx_job_core" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="true" nameIsGenerated="true">
+      <module name="mnsx_job_example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.mnsx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.mnsx.ExampleApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2576071e-429d-4685-8ef5-b08e3676181d" name="Changes" comment="" />
+      <created>1679980897236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679980897236</updated>
+      <workItem from="1679980898767" duration="13409000" />
+      <workItem from="1680057486144" duration="719000" />
+      <workItem from="1680157848536" duration="14218000" />
+      <workItem from="1680232919617" duration="11534000" />
+      <workItem from="1680313847227" duration="4457000" />
+      <workItem from="1680339929345" duration="1019000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Application/Maven/apache-maven-3.8.6-bin/repository/top/mnsx/mnsx_job_core/1.0-SNAPSHOT/mnsx_job_core-1.0-SNAPSHOT.jar!/top/mnsx/handler/JobInvokeRequestHandler.class</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Application/Maven/apache-maven-3.8.6-bin/repository/top/mnsx/mnsx_job_core/1.0-SNAPSHOT/mnsx_job_core-1.0-SNAPSHOT.jar!/top/mnsx/config/JobAutoConfigurationRegistrar.class</url>
+          <line>56</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Application/Maven/apache-maven-3.8.6-bin/repository/top/mnsx/mnsx_job_core/1.0-SNAPSHOT/mnsx_job_core-1.0-SNAPSHOT.jar!/top/mnsx/config/JobAutoConfigurationRegistrar.class</url>
+          <line>37</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Application/Maven/apache-maven-3.8.6-bin/repository/top/mnsx/mnsx_job_core/1.0-SNAPSHOT/mnsx_job_core-1.0-SNAPSHOT.jar!/top/mnsx/config/JobInvokeServletRegistrar.class</url>
+          <line>33</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,6 @@
+FROM openjdk:8-jre
+WORKDIR /
+ADD mnsx_job_admin.jar mnsx_job_admin.jar
+EXPOSE 6679
+EXPOSE 7777
+CMD java -jar mnsx_job_admin.jar
