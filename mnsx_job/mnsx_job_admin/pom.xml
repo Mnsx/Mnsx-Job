@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>top.mnsx</groupId>
+    <artifactId>mnsx_job_admin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <io.netty.netty-all>4.1.79.Final</io.netty.netty-all>
+        <org.springframework.boot>2.3.7.RELEASE</org.springframework.boot>
+        <org.projectlombok.lombok>1.18.26</org.projectlombok.lombok>
+        <com.alibaba.fastjson>2.0.19</com.alibaba.fastjson>
+        <top.mnsx.mnsx_job_core>1.0-SNAPSHOT</top.mnsx.mnsx_job_core>
+        <mysql.mysql-connector-java>8.0.30</mysql.mysql-connector-java>
+        <com.baomidou.mybatis-plus>3.4.1</com.baomidou.mybatis-plus>
+        <org.quartz-scheduler.quartz>2.3.2</org.quartz-scheduler.quartz>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${org.springframework.boot}</version>
+        </dependency>
+        <dependency>
+            <groupId>top.mnsx</groupId>
+            <artifactId>mnsx_job_core</artifactId>
+            <version>${top.mnsx.mnsx_job_core}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+            <version>${mysql.mysql-connector-java}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${com.baomidou.mybatis-plus}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${org.projectlombok.lombok}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${io.netty.netty-all}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${com.alibaba.fastjson}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>${org.quartz-scheduler.quartz}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz-jobs</artifactId>
+            <version>${org.quartz-scheduler.quartz}</version>
+        </dependency>
+    </dependencies>
+</project>

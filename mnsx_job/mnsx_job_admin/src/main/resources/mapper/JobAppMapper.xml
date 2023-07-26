@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.mnsx.job.mapper.JobAppMapper">
+
+    <resultMap id="BaseResultMap" type="top.mnsx.job.domain.po.JobApp">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="appName" column="app_name" jdbcType="VARCHAR"/>
+            <result property="appDesc" column="app_desc" jdbcType="VARCHAR"/>
+            <result property="creator" column="creator" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="createWay" column="create_way" jdbcType="INTEGER"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="addressList" column="address_list" jdbcType="VARCHAR"/>
+            <result property="enabled" column="enabled" jdbcType="INTEGER"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,app_name,app_desc,
+        creator,create_time,create_way,
+        update_time,address_list,enabled,
+        is_deleted
+    </sql>
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.mnsx.job.mapper.JobLogMapper">
+
+    <resultMap id="BaseResultMap" type="top.mnsx.job.domain.po.JobLog">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="jobId" column="job_id" jdbcType="INTEGER"/>
+            <result property="runAddressList" column="run_address_list" jdbcType="VARCHAR"/>
+            <result property="runFailRetryCount" column="run_fail_retry_count" jdbcType="INTEGER"/>
+            <result property="triggerStartTime" column="trigger_start_time" jdbcType="TIMESTAMP"/>
+            <result property="triggerEndTime" column="trigger_end_time" jdbcType="TIMESTAMP"/>
+            <result property="triggerResult" column="trigger_result" jdbcType="INTEGER"/>
+            <result property="triggerMsg" column="trigger_msg" jdbcType="VARCHAR"/>
+            <result property="jobRunResult" column="job_run_result" jdbcType="INTEGER"/>
+            <result property="jobRunMsg" column="job_run_msg" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,job_id,run_address_list,
+        run_fail_retry_count,trigger_start_time,trigger_end_time,
+        trigger_result,trigger_msg,job_run_result,
+        job_run_msg
+    </sql>
+</mapper>

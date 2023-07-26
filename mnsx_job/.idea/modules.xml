@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/mnsx_job.iml" filepath="$PROJECT_DIR$/.idea/mnsx_job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mnsx_job_admin/mnsx_job_admin.iml" filepath="$PROJECT_DIR$/mnsx_job_admin/mnsx_job_admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mnsx_job_core/mnsx_job_core.iml" filepath="$PROJECT_DIR$/mnsx_job_core/mnsx_job_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mnsx_job_template/mnsx_job_template.iml" filepath="$PROJECT_DIR$/mnsx_job_template/mnsx_job_template.iml" />
+    </modules>
+  </component>
+</project>

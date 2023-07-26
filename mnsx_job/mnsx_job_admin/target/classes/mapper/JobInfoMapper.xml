@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.mnsx.job.mapper.JobInfoMapper">
+
+    <resultMap id="BaseResultMap" type="top.mnsx.job.domain.po.JobInfo">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="jobAppId" column="job_app_id" jdbcType="INTEGER"/>
+            <result property="jobName" column="job_name" jdbcType="VARCHAR"/>
+            <result property="jobDesc" column="job_desc" jdbcType="VARCHAR"/>
+            <result property="alarmEmail" column="alarm_email" jdbcType="VARCHAR"/>
+            <result property="creator" column="creator" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="createWay" column="create_way" jdbcType="INTEGER"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="runCron" column="run_cron" jdbcType="VARCHAR"/>
+            <result property="runStrategy" column="run_strategy" jdbcType="INTEGER"/>
+            <result property="runParam" column="run_param" jdbcType="VARCHAR"/>
+            <result property="runTimeout" column="run_timeout" jdbcType="INTEGER"/>
+            <result property="runFailRetryCount" column="run_fail_retry_count" jdbcType="INTEGER"/>
+            <result property="triggerLastTime" column="trigger_last_time" jdbcType="TIMESTAMP"/>
+            <result property="triggerNextTime" column="trigger_next_time" jdbcType="TIMESTAMP"/>
+            <result property="enabled" column="enabled" jdbcType="INTEGER"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,job_app_id,job_name,
+        job_desc,alarm_email,creator,
+        create_time,create_way,update_time,
+        run_cron,run_strategy,run_param,
+        run_timeout,run_fail_retry_count,trigger_last_time,
+        trigger_next_time,enabled,is_deleted
+    </sql>
+</mapper>
