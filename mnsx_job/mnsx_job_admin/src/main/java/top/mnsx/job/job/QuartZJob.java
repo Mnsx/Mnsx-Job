@@ -89,7 +89,7 @@ public class QuartZJob implements Job {
         // 失败重试此处
         int failRetryCount = jobInfo.getRunFailRetryCount(), readyRetryCount = -1;
         // 失败重试或者使用下一个地址
-        while (iterator.hasNext() && ++readyRetryCount <= failRetryCount) {
+        while (iterator.hasNext() && ++readyRetryCount < failRetryCount) {
             String address = iterator.next();
             hasInvokeAddress.add(address);
             try {

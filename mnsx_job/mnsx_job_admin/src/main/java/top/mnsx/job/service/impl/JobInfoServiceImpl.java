@@ -152,7 +152,10 @@ public class JobInfoServiceImpl extends ServiceImpl<JobInfoMapper, JobInfo>
 
     @Override
     public Result<JobInfo> update(JobInfo jobInfo) {
-        JobInfo byId = getById(jobInfo.getAppId());
+        JobInfo byId = getById(jobInfo.getId());
+        if (byId == null) {
+            return Result.err("任务不存在");
+        }
         JobApp jobApp = jobAppService.getById(byId.getAppId());
 
         JobKey jobKey = JobKey.jobKey(byId.getJobName(), jobApp.getAppName());
@@ -169,7 +172,7 @@ public class JobInfoServiceImpl extends ServiceImpl<JobInfoMapper, JobInfo>
 
         updateById(jobInfo);
 
-        byId = getById(jobInfo.getAppId());
+        byId = getById(jobInfo.getId());
         Result registerResult = register(byId);
         if (registerResult.isErr()) {
             return registerResult;
@@ -192,6 +195,9 @@ public class JobInfoServiceImpl extends ServiceImpl<JobInfoMapper, JobInfo>
     @Override
     public Result<Boolean> enable(Integer id) {
         JobInfo byId = getById(id);
+        if (byId == null) {
+            return Result.err("任务不存在");
+        }
 
         if (Objects.equals(byId.getEnabled(), EnabledEnum.YES.getCode())) {
             return Result.err("任务已经处于启动状态");
@@ -203,13 +209,16 @@ public class JobInfoServiceImpl extends ServiceImpl<JobInfoMapper, JobInfo>
         }
 
         byId.setEnabled(EnabledEnum.YES.getCode());
-        update(byId);
+        updateById(byId);
 
         return Result.ok("启动定时任务成功");    }
 
     @Override
     public Result<Boolean> disable(Integer id) {
         JobInfo byId = getById(id);
+        if (byId == null) {
+            return Result.err("任务不存在");
+        }
 
         if (Objects.equals(byId.getEnabled(), EnabledEnum.NO.getCode())) {
             return Result.err("任务已经处于停用状态");
@@ -230,7 +239,7 @@ public class JobInfoServiceImpl extends ServiceImpl<JobInfoMapper, JobInfo>
         }
 
         byId.setEnabled(EnabledEnum.NO.getCode());
-        update(byId);
+        updateById(byId);
 
         return Result.ok(true);
     }
@@ -238,6 +247,9 @@ public class JobInfoServiceImpl extends ServiceImpl<JobInfoMapper, JobInfo>
     @Override
     public Result<Boolean> run(Integer id) {
         JobInfo byId = getById(id);
+        if (byId == null) {
+            return Result.err("任务不存在");
+        }
 
         JobApp jobApp = jobAppService.getById(byId.getAppId());
 

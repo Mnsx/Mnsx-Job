@@ -1,11 +1,11 @@
 server:
   port: 6679
   servlet:
-    context-path: /mnsx/job
+    context-path: /job
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.92.172/mnsx_job?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://mnsx.top:3306/mnsx_job?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
-    password: 123123
+    password: xx1527030652
