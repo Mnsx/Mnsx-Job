@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : PC-CentOS-MySQL
+ Source Server         : Coud-CentOS-Mnsx
  Source Server Type    : MySQL
  Source Server Version : 50742
- Source Host           : 192.168.92.172:3306
+ Source Host           : 47.101.195.28:3306
  Source Schema         : mnsx_job
 
  Target Server Type    : MySQL
  Target Server Version : 50742
  File Encoding         : 65001
 
- Date: 26/07/2023 10:00:50
+ Date: 27/07/2023 09:42:57
 */
 
 SET NAMES utf8mb4;
@@ -33,7 +33,7 @@ CREATE TABLE `job_app`  (
   `enabled` int(11) NOT NULL COMMENT '启用状态：1-启用，0-停用',
   `is_deleted` int(11) NOT NULL COMMENT '是否删除：1-是，0-否',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for job_info
@@ -59,7 +59,7 @@ CREATE TABLE `job_info`  (
   `enabled` int(11) NOT NULL COMMENT '启用状态：1-启用，0-停用',
   `is_deleted` int(11) NOT NULL COMMENT '是否删除：1-是，2-否',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 25 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 36 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for job_log
@@ -77,6 +77,6 @@ CREATE TABLE `job_log`  (
   `job_result` int(11) NULL DEFAULT NULL COMMENT '执行结果',
   `job_msg` varchar(2560) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '执行信息',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 49 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
